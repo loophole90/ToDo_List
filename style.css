@@ -31,7 +31,7 @@ header> nav{
     height: 100%;
 }
 
-header> nav> h1{color: white; margin-left: 5%;}
+header> nav> h1{color: white; margin-left: 5%; font-size: 8vw;}
 
 header> nav>ul{display: flex; gap: 2vw; margin-right: 5%;}
 header> nav>ul>li{ font-size: 1.8rem; }

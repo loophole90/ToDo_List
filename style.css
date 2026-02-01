@@ -18,8 +18,8 @@ a:active{-webkit-tap-highlight-color: transparent; opacity: 0.3;}
 /* HEADER */
 header{
     background: #111111;
-    height: 23.26vw;
-    max-height: 100px;
+    height: 30.26vw;
+    max-height: 150px;
     border-bottom: 1px solid white;
 }
 
@@ -44,7 +44,7 @@ header> nav>ul>li{ font-size: 1.8rem; }
 .b_menu > img{width: 50px;}
 .b_close > img{width: 50px;}
 
-.menu > nav > div{ width: 100%; display: flex; justify-content: end; border-bottom: 1px solid white; height: 23.26vw;}
+.menu > nav > div{ width: 100%; display: flex; justify-content: end; border-bottom: 1px solid white; height: 30.26vw;}
 
 /* BODY */
 body{

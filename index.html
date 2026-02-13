@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>ToDo List</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Craft</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <main class="app">
+    <section class="hud">
+      <h1>Mini Craft</h1>
+      <p>A tiny Minecraft-inspired sandbox. Click to place blocks, right-click to remove.</p>
+      <div class="controls">
+        <label for="blockType">Block</label>
+        <select id="blockType" aria-label="Select block type">
+          <option value="grass">Grass</option>
+          <option value="dirt">Dirt</option>
+          <option value="stone">Stone</option>
+          <option value="wood">Wood</option>
+          <option value="water">Water</option>
+        </select>
+        <button id="clearBtn">Reset World</button>
+      </div>
+      <p class="hint">Tip: Drag to move camera · Mouse wheel to zoom</p>
+    </section>
 
-    <header>
-        <nav>
-            <h1>ToDo List</h1>
-            <button class="b_menu"><img src="svg/menu.svg" alt="menu"></button>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section class="world-wrap">
+      <canvas id="world" width="1000" height="620" aria-label="Mini voxel world canvas"></canvas>
+    </section>
+  </main>
 
-
-    <main>
-
-        <div class="menu">
-            <nav class="n_menu">
-                <div><button class="b_close"><img src="svg/close.svg" alt="close"></button></div>
-                
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-
-    </main>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
